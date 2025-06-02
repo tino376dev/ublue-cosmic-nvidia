@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y openfortivpn
+dnf5 install -y openfortivpn alacritty
 
 # Use a COPR Example:
 #
@@ -21,6 +21,10 @@ dnf5 install -y openfortivpn
 dnf -y copr enable pgdev/ghostty
 dnf -y install ghostty
 dnf5 -y copr disable pgdev/ghostty
+
+dnf -y copr enable yalter/niri
+dnf -y install niri
+dnf5 -y copr disable yalter/niri
 
 #### Example for enabling a System Unit File
 
