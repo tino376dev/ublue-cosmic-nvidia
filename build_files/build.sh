@@ -19,7 +19,7 @@ dnf5 install -y openfortivpn
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 dnf -y copr enable pgdev/ghostty
-dnf -y install ghostt
+dnf -y install ghostty
 dnf5 -y copr disable pgdev/ghostty
 
 #### Example for enabling a System Unit File
