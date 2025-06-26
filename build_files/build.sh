@@ -13,7 +13,7 @@ dnf -y install niri
 dnf5 -y copr disable yalter/niri
 
 # regular packages
-dnf5 install -y openfortivpn swaybg brightnessctl
+dnf5 install -y openfortivpn mako swaybg brightnessctl
 
 # podman socket
 systemctl enable podman.socket
