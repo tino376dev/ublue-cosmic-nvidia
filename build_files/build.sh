@@ -19,9 +19,5 @@ dnf5 install -y openfortivpn mako swaybg brightnessctl nautilus
 systemctl enable podman.socket
 
 ## test using niri with rest of cosmic elements
-curl -o /usr/bin/cosmic-ext-alternative-startup https://raw.githubusercontent.com/tino376dev/cosmic-ext-extra-sessions-niri-artifacts/main/target/cosmic-ext-alternative-startup
-curl -o /usr/bin/start-cosmic-ext-niri https://raw.githubusercontent.com/tino376dev/cosmic-ext-extra-sessions-niri-artifacts/main/target/start-cosmic-ext-niri
-curl -o /usr/share/wayland-sessions/cosmic-ext-niri.desktop https://raw.githubusercontent.com/tino376dev/cosmic-ext-extra-sessions-niri-artifacts/main/target/cosmic-ext-niri.desktop
-
-chmod +x /usr/bin/cosmic-ext-alternative-startup
-chmod +x /usr/bin/start-cosmic-ext-niri
+curl -o /sbin/start-cosmic-ext-niri https://raw.githubusercontent.com/drakulix/cosmic-ext-extra-sessions/main/niri/start-cosmic-ext-niri
+curl -o /usr/share/wayland-sessions/cosmic-ext-niri.desktop https://raw.githubusercontent.com/drakulix/cosmic-ext-extra-sessions/main/niri/cosmic-ext-niri.desktop
