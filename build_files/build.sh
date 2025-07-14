@@ -16,4 +16,4 @@ dnf5 -y copr disable yalter/niri
 dnf5 install -y openfortivpn brightnessctl nautilus
 
 # podman socket
-# systemctl enable podman.socket
+systemctl enable podman.socket
