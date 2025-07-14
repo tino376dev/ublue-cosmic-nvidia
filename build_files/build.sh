@@ -3,9 +3,9 @@
 set -ouex pipefail
 
 # terminal emulator
-dnf -y copr enable pgdev/ghostty
-dnf -y install ghostty
-dnf5 -y copr disable pgdev/ghostty
+# dnf -y copr enable pgdev/ghostty
+# dnf -y install ghostty
+# dnf5 -y copr disable pgdev/ghostty
 
 # niri
 dnf -y copr enable yalter/niri
@@ -16,4 +16,4 @@ dnf5 -y copr disable yalter/niri
 dnf5 install -y openfortivpn mako swaybg brightnessctl nautilus
 
 # podman socket
-systemctl enable podman.socket
+# systemctl enable podman.socket
