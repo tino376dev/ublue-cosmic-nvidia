@@ -13,7 +13,7 @@ set -ouex pipefail
 # dnf5 -y copr disable yalter/niri
 
 # regular packages
-dnf5 install -y niri openfortivpn brightnessctl nautilus
+dnf5 install -y niri openfortivpn brightnessctl nautilus swaybg swayidle
 
 # podman socket
 systemctl enable podman.socket
