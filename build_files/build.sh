@@ -11,7 +11,7 @@ systemctl enable podman.socket
 ## test using niri with rest of cosmic elements
 curl -o /usr/bin/start-cosmic-ext-niri https://raw.githubusercontent.com/drakulix/cosmic-ext-extra-sessions/main/niri/start-cosmic-ext-niri
 curl -o /usr/share/wayland-sessions/cosmic-ext-niri.desktop https://raw.githubusercontent.com/drakulix/cosmic-ext-extra-sessions/main/niri/cosmic-ext-niri.desktop
-chmod +x /usr/bin/start-cosmic-ext-niri
+sudo chmod +x /usr/bin/start-cosmic-ext-niri
 
 # git clone https://github.com/Drakulix/cosmic-ext-extra-sessions.git
 # cd cosmic-ext-extra-sessions
