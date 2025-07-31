@@ -12,5 +12,8 @@ dnf5 install -y brightnessctl mako micro nautilus niri openfortivpn pavucontrol 
 # sed -i 's|Exec=/usr/local/bin/|Exec=/usr/bin/|' /usr/share/wayland-sessions/cosmic-ext-niri.desktop
 ##
 
+# disable cosmic sesion
+mv /usr/share/wayland-sessions/cosmic.desktop /usr/share/wayland-sessions/cosmic.desktop.disabled
+
 # podman socket
 systemctl enable podman.socket
