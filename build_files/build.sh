@@ -10,10 +10,10 @@ dnf remove -y firefox
 
 # flatpaks
 /usr/bin/flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y --system flathub dev.zed.Zed
-flatpak install -y --system flathub app.zen_browser.zen
-flatpak install -y --system org.remmina.Remmina
-flatpak install -y --system md.obsidian.Obsidian
+# flatpak install -y --system flathub dev.zed.Zed
+# flatpak install -y --system flathub app.zen_browser.zen
+# flatpak install -y --system org.remmina.Remmina
+# flatpak install -y --system md.obsidian.Obsidian
 
 # clean up
 dnf clean all
