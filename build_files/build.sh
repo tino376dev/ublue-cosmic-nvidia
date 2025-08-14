@@ -13,7 +13,7 @@ dnf5 install -y brightnessctl gcc mako micro nautilus niri openfortivpn pavucont
 ##
 
 # disable cosmic sesion
-mv /usr/share/wayland-sessions/cosmic.desktop /usr/share/wayland-sessions/cosmic.desktop.disabled
+# mv /usr/share/wayland-sessions/cosmic.desktop /usr/share/wayland-sessions/cosmic.desktop.disabled
 
 # podman socket
 systemctl enable podman.socket
