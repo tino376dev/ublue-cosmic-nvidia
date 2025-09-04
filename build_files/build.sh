@@ -4,9 +4,11 @@ set -ouex pipefail
 
 # rpm --import https://packages.microsoft.com/keys/microsoft.asc
 # sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+# enable niri copr
+dnf copr -y enable yalter/niri
 
 # regular packages
-dnf install -y brightnessctl gcc mako micro nautilus niri openfortivpn pavucontrol swaybg swayidle
+dnf install -y brightnessctl gcc micro nautilus niri openfortivpn pavucontrol
 
 # remove unused packages
 dnf remove -y firefox
